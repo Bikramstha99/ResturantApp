@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+ .navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: linear-gradient(45deg, #8B4513 25%, #A0522D 25%, #A0522D 50%, #8B4513 50%, #8B4513 75%, #A0522D 75%);
+ }
+ .logo {
+    display: flex;   
+  }
+  
+  .logo img {
+    width: 6rem;
+    height: 5.5rem;
+  }
+  
+  .logo-text { 
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-family: Starborn, sans-serif;
+    font-size: 2rem;
+  }
+  .list{
+    display: flex;
+    font-family: Starborn, sans-serif;
+    font-size: 1.5rem;
+    margin-right: 5rem;
+  }
+
+  .list ul{
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .list ul li{
+    margin: 1rem;
+  }
+
+  .list ul li a{
+    color: #fff;
+  }
+  .menu-line {
+    display: block;
+  }
+  .line{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  @font-face {
+    font-family: 'Starborn';
+    src:url('Font/Starborn.otf') format('opentype');
+  }
+
+
+
+  /* main mid part */
+  body {
+    background-color: #f2eada; /* Background color to match wood color */
+  }
+
+  .background-image{
+    background-image: url(ramen.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 678px;
+  }
+
+
