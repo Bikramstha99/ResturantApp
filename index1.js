@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var currentIndex = 0;
     var images = [
         'resturant1.jpg',
+        'resturant2.jpg',
+        'resturant3.jpg',
         'kitchen.jpg',
         'interior.jpg',
         'people.jpg',
