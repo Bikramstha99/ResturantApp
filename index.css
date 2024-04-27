@@ -1,70 +1,158 @@
+/*Css reset*/
 *{
-    margin: 0;
-    padding: 0;
- }
-.navbar {
+  margin: 0;
+  padding: 0;
+}
+
+/*Navigation Bar*/
+#navbar{
   display: flex;
-  align-items: center; /* Vertically center contents */
-  justify-content: space-around;
-  color: #333;
-  /* background: linear-gradient(45deg, #8B4513 25%, #A0522D 25%, #A0522D 50%, #8B4513 50%, #8B4513 75%, #A0522D 75%); */
-  height: 100px; /* Adjust the height as needed */
+  align-items: center;
 }
 
-.logo {
+/*Navigation Bar: Logo and Image*/
+#logo{
+  margin:10px 10px;
+}
+
+#logo img{
+  height: 59px;
+  margin: 3px 6px;
+}
+
+/*Navigation Bar: List Styling*/
+
+#navbar{
+  width: 100%;
+}
+
+#navbar ul{
   display: flex;
-  margin-left: 1rem;
-}
-.logo img {
-  width: 100px; 
-  height: auto;
 }
 
-.list{
-    display: flex;
-    font-family: Open Sans;
-    font-size: 1.5rem;
-    margin-right: 2rem;
-  }
+#navbar::before{
+  content: "";
+  background-color: black;
+  height: 100px;
+  z-index: -1;
+  opacity: 0.4;
+}
 
-  .list ul{
-    list-style-type: none;
-    display: flex;
-  }
-  
-  .list ul li{
-    margin: 1rem;
-  }
+#navbar ul li{
+  /* color: white; */
+  list-style: none;
+  font-size: 1.3rem;
+}
 
-  .list ul li a{
-    color: #fff;
-  }
-  .menu-line {
-    display: block;
-  }
-  .line{
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
-  }
-  @font-face {
-    font-family: 'Starborn';
-    src:url('Font/Starborn.otf') format('opentype');
-  }
+#navbar ul li a{
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover{
+  color: black;
+  background-color: white;
+}
 
 
+/* Home Section */
+#home{
+  display: flex;
+  flex-direction: column;
+  padding:3px 220px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+#home::before{
+  content: "";
+  position: absolute;
+  background: url('../ramen.png') no-repeat center center/cover;
+  height: 90%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.89;
+}
 
-  /* main mid part */
-  body {
-    background-color: #f2eada; /* Background color to match wood color */
-  }
+#home h1{
+  color: white;
+  text-align: center;
+}
+#home p{
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
 
-  .background-image{
-    background-image: url(ramen.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    min-height: 678px;
-  }
+/*services Section*/
+.services-container{
+ margin-top: 13rem;
+}
+#services{
+  margin: 34px ;
+  display: flex;
+
+}
+#services .box{
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 28px;
+  background: #f2f2f2;;
+}
+#services .box img{
+  height:150px;
+  margin: auto;
+  display: block;
+}
+
+#services .box p{
+  font-size: 1rem;
+}
+
+
+/*client Section*/
+
+
+/*Ulitlity class*/
+.h-primary{
+  font-size: 3.8rem;
+  padding: 12px;
+}
+.h-secondary{
+  font-size: 2.3rem;
+  padding: 12px;
+}
+.btn{
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.center{
+  text-align: center;
+}
+
 
 
