@@ -72,13 +72,23 @@ html{
 }
 
 /* Home Section */
+
 #home{
     display: flex;
     flex-direction: column;
     padding:3px 200px;
-    height: 550px;
+    height: 525px;
     justify-content: center;
     align-items: center;
+}
+#images{
+    position: absolute;
+    height: 642px;
+    top:0px;    
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
 }
 .slider-arrow {
     position: absolute;
@@ -98,17 +108,6 @@ html{
 
 #slider-right {
     right: 0;
-}
-
-#home::before{ 
-    content: "";
-    position: absolute;
-    height: 642px;
-    top:0px;
-    left:0px;
-    width: 100%;
-    z-index: -1;
-    opacity:0.89;
 }
 
 #home h1{
@@ -134,7 +133,7 @@ html{
     margin: 2px 55px;
     border-radius: 28px;
     background: #f2f2f2;
-    margin-bottom: 20px;
+
 }
 
 #services .box img{ 
@@ -148,36 +147,61 @@ html{
 
 } 
 
-/* Clients Section */
-#client-section{ 
-    position: relative;
+/* Menu Section */
+#menu{
+    background-color:rgba(192, 182, 172, 0.5)
+}
+#menu p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    
+}
+.menu-image{
+    margin-top: 20px;
+    text-align: center;
 }
 
-#client-section::before{
- content: "";
- position: absolute;
- background: url('../bg.jpg');
- width: 100%;
- height: 100%;
- z-index: -1;
- opacity: 0.3;
+/*Gallery Section*/
+#gallery p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif; 
 }
-
-#clients{
+#gallery ul{
     display: flex;
+    list-style: none;
     justify-content: center;
-    align-items: center;
+    
+}
+#gallery ul li{ 
+    margin-top: 20px;
+   margin-left: 30px;
 }
 
-.client-item{
-    padding: 34px;
+.category-link{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif; 
+}
+#photo-gallery{
+    margin-top: 40px;
+    text-align: center;
 }
 
-#clients img{
-    height: 124px;
+#photo-gallery img  {
+    width: 350px; 
+    height: 260px;
+     margin-left: 35px;
+    transition: transform 0.3s; 
+
 }
-
-
+#photo-gallery img:hover {
+    transform: scale(1.05); 
+}
 /* Contact Section */
 #contact{
     position: relative;

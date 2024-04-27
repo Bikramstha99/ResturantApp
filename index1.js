@@ -4,10 +4,15 @@ document.addEventListener("DOMContentLoaded", function() {
         'resturant1.jpg',
         'kitchen.jpg',
         'interior.jpg',
-        'outside.jpg',
-        'people.jpg'
+        'people.jpg',
+        'ramen1.jpg'
     ];
-    var homeBefore = document.getElementById('home').style;
+    var photos = {
+        ALL: ['kitchen.jpg', 'outside.jpg','interior.jpg', 'people.jpg','ramen.png', 'resturant1.jpg'],
+        Food: ['interior.jpg', 'logo.png'],
+        Restaurant: ['ramen.png', 'resturant1.jpg']
+    };
+    var homeBefore = document.getElementById('images').style;
 
     function showImage(index) {
         homeBefore.background = 'url(' + images[index] + ') no-repeat center/cover';
@@ -32,8 +37,30 @@ document.addEventListener("DOMContentLoaded", function() {
         nextImage();
     });
 
-    setInterval(nextImage, 5000); // Change image every 2 seconds
+    setInterval(nextImage, 5000); 
 
-    // Initial image display
     showImage(currentIndex);
+
+
+
+function displayPhotos(category) {
+    var gallery = document.getElementById('photo-gallery');
+    gallery.innerHTML = ''; 
+
+    photos[category].forEach(function(photo) {
+        var img = document.createElement('img');
+        img.src = photo;
+        gallery.appendChild(img);
+    });
+}
+
+document.querySelectorAll('.category-link').forEach(function(link) {
+    link.addEventListener('click', function() {
+        var category = this.id;
+        displayPhotos(category);
+    });
 });
+displayPhotos('ALL');   
+});
+
+
