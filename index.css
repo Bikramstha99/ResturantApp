@@ -48,7 +48,6 @@ html{
 /* Navigation Bar: List Styling */
 
 #navbar ul{
-    margin-left: 15rem;
     display: flex;
     font-family: 'Baloo Bhai', cursive;
 }
