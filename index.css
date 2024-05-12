@@ -19,11 +19,12 @@ html{
     background-color: black;
     opacity: 0.7;   
 }
-/* .location p{
-    margin-top: 10px;
+.location p{
+    /* margin-top: 10px;
     margin-left: 10px;
+    height: 20px; */
     color: white;   
-} */
+}
 .phoneside{
     margin-left: 10px;
     display: flex;
